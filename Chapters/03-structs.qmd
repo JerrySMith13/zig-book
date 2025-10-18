@@ -310,7 +310,7 @@ In summary, the `defer` keyword allows you to register an expression to be execu
 At this point, you might attempt to compare the Zig `defer` keyword to it's sibling in the Go language
 (i.e. [Go also has a `defer` keyword](https://go.dev/tour/flowcontrol/12)).
 However, the Go `defer` keyword behaves slightly different
-than it's sibling in Zig. More specifically, the `defer` keyword in Go always move an expression to be
+than it's sibling in Zig. More specifically, the `defer` keyword in Go always moves an expression to be
 executed at the **exit of the current function**.
 
 If you think deeply about this statement, you will notice that the "exit of the current function" is something
@@ -1452,3 +1452,4 @@ const pool = ThreadPool.init(
     .{ .max_threads = num_threads }
 );
 ```
+
